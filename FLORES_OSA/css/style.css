@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap");
+* {
+  font-family: "Poppins", cursive;
+}
+body {
+  color: azure;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+
+.mensaje{
+    width: 40vw;
+    height: 25vh;
+    margin-bottom: 2%;
+    padding: 5%;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    border: 5px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.padre {
+  background-image: url(/img/florea\ amarillas.jpg);
+  background-attachment: fixed;
+}
+.fondoNegro {
+  background-color: rgba(0, 0, 0, 0.801) 00;
+}
+.padre .navbar {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #000000;
+}
+.padre .navbar img {
+  display: flex;
+  margin-left: 10px;
+  width: 80px;
+}
+.padre .navbar input[type="submit"] {
+  /* border: solid red; */
+  border: none;
+  margin-right: 20px;
+  font-size: 30px;
+  height: 100px;
+  background: transparent;
+  color: #fff;
+  font-family: "Montserrat", Courier, monospace;
+}
+.padre .navbar input[type="submit"]:hover {
+  color: rgb(49, 151, 104);
+}
+.padre .formulario {
+  /* background: rgb(255, 255, 255); */
+  margin-bottom: 200px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  border-radius: 20px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.formulario {
+  /* background: rgb(255, 255, 255); */
+  margin-bottom: 200px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  border-radius: 20px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.padre .formulario.activo {
+  opacity: 1;
+  transition: 0.8s;
+}
+.padre .formulario h1 {
+  margin-top: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Montserrat", Courier, monospace;
+  font-weight: 400;
+}
+.padre .formulario img {
+  width: 100px;
+}
+.padre .formulario .inputDatos {
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
+  width: 100%px;
+}
+.padre .formulario .inputDatos input {
+  height: 15px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e0e0e0;
+}
+.padre .formulario i {
+  color: #000000;
+  width: 40px;
+  font-size: 30px;
+}
+.padre .formulario input[type="submit"] {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", Courier, monospace;
+  font-weight: 400;
+  font-size: 15px;
+}
+.padre .formulario .iconos {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.padre .formulario .iconos i {
+  padding: 0 15px;
+}
+.padre .formulario input[type="submit"]:hover {
+  background-color: #e0e0e0;
+}
+.padre .recordar {
+  width: 100%;
+  display: flex;
+  color: #000000;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 12px;
+  font-family: "Montserrat", Courier, monospace;
+}
+.padre .recordar input {
+  margin-right: 10px;
+}
+
+.formulario {
+  /* background: rgb(255, 255, 255); */
+  margin-bottom: 200px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  border-radius: 20px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.greetings {
+  font-size: 6rem;
+  font-weight: 900;
+}
+.greetings > span {
+  animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00;
+  }
+  10%,
+  90% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+}
+.greetings > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.greetings > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.greetings > span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.greetings > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #111;
+}
+
+@media screen and (max-width: 574px) {
+  .greetings {
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .description {
+    font-size: 1rem;
+  }
+
+  .button a {
+    font-size: 0.5rem;
+  }
+}
+
+.description {
+  color: #fbff00;
+}
+
+/* Estilo para el botón */
+.button button {
+  background-color: yellow; /* Fondo amarillo */
+  border: none; /* Sin bordes */
+  padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
+  font-size: 18px; /* Tamaño de fuente */
+  cursor: pointer;
+  position: relative; /* Necesario para el resplandor */
+  border-radius: 20px; /* Esquinas redondeadas */
+  transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+}
+
+/* Estilo para el enlace dentro del botón */
+.button button a {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: inherit; /* Hereda el color del texto del botón */
+}
+
+/* Efecto de resplandor al pasar el cursor sobre el botón */
+.button button:hover {
+  background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
+  box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
+}
